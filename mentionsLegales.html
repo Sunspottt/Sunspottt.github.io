@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mention Legales</title>
+    <link rel="stylesheet" href="/css/mention.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/index.html" class="logo">SunSpot</a>
+            <ul class="nav-links">
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#map">Map</a></li>
+                <li><a href="/index.html#favourites">Favorites</a></li>
+            </ul>
+            <div id="burgerBtn" class="burger">
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content">
+                <h2>Mention legales</h2>
+            </div>
+            <div class="par">
+                <p>
+                Je ne sais plus quand c'est arrivé.<br>
+                Peut-être entre deux éclats de rire.<br>
+                Ou quand tu me parlais de la Malaisie, les yeux perdus dans tes souvenirs.<br>
+                Ou bien un soir, à Paris, quand tu marchais comme si la ville t'appartenait,
+                et moi je suivais, un peu ébloui, un peu silencieux.<br>
+                Je ne suis pas un grand orateur.<br>
+                Je ne fais pas de grandes promesses.<br>
+                Mais j'ai eu envie de faire quelque chose pour toi. Rien de grand.<br>
+                Juste quelque chose de vrai.<br>
+                Alors j'ai pris tout ce que je ne savais pas dire,
+                et j'ai voulu le transformer en geste.<br>
+                Un geste simple, discret, mais qui aurait ton nom en filigrane.<br>
+                Tu n'es pas “une fille comme les autres”.<br>
+                C'est une phrase qu'on entend trop souvent.<br>
+                Mais toi, tu l'as rendue vraie.<br>
+                Par ton regard qui voit au-delà.<br>
+                Par cette manière que tu as d'être là, entière, vivante, curieuse.<br>
+                Par ce je-ne-sais-quoi qui me donne envie d'apprendre tes silences.<br>
+                J'attends toujours ton itinéraire, c'est vrai.<br>
+                Mais entre-temps, je t'ai écrit le mien.<br>
+                Il commence ici.<br>
+                Avec toi.<br>
+                Et si un jour tu te demandes pourquoi tout cela, pourquoi ce message, pourquoi ce soin,
+                alors la réponse est simple :<br>
+                parce que tu m'as touché.<br>
+                Sans le vouloir.<br>
+                Et que ça ne m'a plus quitté depuis.<br>
+                Ce n'est pas une déclaration pompeuse.<br>
+                C'est un murmure.<br>
+                Mais c'est le plus vrai que j'ai su écrire
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+        <p>&copy; 2025 Kiraz. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="/mentions-legales">Mentions légales</a>
+            <a href="/politique-confidentialite">Confidentialité</a>
+            <a href="mailto:contact@tonsite.com">Contact</a>
+        </div>
+        </div>
+    </footer>
+    <script>
+    const burger = document.getElementById('burgerBtn');
+    const nav = document.querySelector('.nav-links');
+    console.log(burger, nav); // Vérifie dans la console
+    if (burger && nav) {
+        burger.addEventListener('click', () => {
+        nav.classList.toggle('open');
+        burger.classList.toggle('open');
+        console.log('click burger');
+        });
+    }
+</script>
+</body>
+</html>
